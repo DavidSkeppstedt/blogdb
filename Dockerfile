@@ -22,7 +22,7 @@ EXPOSE 5432
 # Add VOLUMEs to allow backup of config, logs and databases
 VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
-ENV PG_MAJOR 9.4
+ENV PG_MAJOR 9.3
 ENV PATH /usr/lib/postgresql/$PG_MAJOR/bin:$PATH
 
 
